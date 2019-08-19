@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom';
-import styled from 'styled-components';
-import {ButtonContainer} from './Button';
+import { Navbar} from "reactstrap";
+import {ButtonContainer, Title} from './Button';
+// import {Title} from './Button';
 export default class NarBar extends Component {
     render() {
         return (
-        <nav class="navbar navbar-expand-sm navbar-dark px-sm-5 bg-primary ">
+        <Navbar color="dark" dark fixed="top" expand="sm">
             <Link to='/'>
                 <Title>Inventory</Title>
             </Link>
@@ -16,6 +17,13 @@ export default class NarBar extends Component {
                     </Link>
                 </li>  
             </ul>
+            <ul className="navbar-nav align-items-center">
+                <li className="nav-item ml-5">
+                    <Link to="/Inventory" className="nav-link"> 
+                        Add Products
+                    </Link>
+                </li>  
+            </ul>
             <Link to="/cart" className="ml-auto"> 
                 <ButtonContainer>
                     <span className="mr-2">
@@ -23,16 +31,8 @@ export default class NarBar extends Component {
                     </span> My Cart
                 </ButtonContainer>
             </Link>
-        </nav>
+        </Navbar>
         );
     }
 }
-const Title = styled.h4`
-  font-size: 1.4 rem; background: transparent;
-  color: var(--mainYellow);
-  transition: all 0.25s ease-in-out; 
-  &:hover{background: var(--lightBlue); color:var(--mainBlue);}
-    &:focus{
-    outline: none;
-    }
-`;
+
