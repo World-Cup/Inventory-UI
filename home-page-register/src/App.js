@@ -7,8 +7,7 @@ import Login from './HomePage/Login';
 import ProjectDetails from './ProjectList/ProjectDetails';
 import Dashboard from './Dashboard/Dashboard';
 import Register from './HomePage/Register';
-
-
+import CreateProject from './ProjectList/CreateProject';
 export default function App() {
 
 	const [firebaseInitialized, setFirebaseInitialized] = useState(false)
@@ -21,6 +20,7 @@ export default function App() {
             <Route path ='/project/:id' component ={ProjectDetails}/>
             <Route path ='/register' component ={Register}/>
             <Route path ='/login' component ={Login}/>
+            <Route path ='/create' component ={CreateProject}/>
           </Switch>
       </div>
     </BrowserRouter>
