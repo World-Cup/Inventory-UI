@@ -1,11 +1,16 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+
+import ProjectSummary from './ProjectSummary';
 
 const ProjectList = () => {
     return (
-      <div className>
-        
+      <div className= 'project-list section'>
+         <ProjectSummary />
+         <ProjectSummary />
+         <ProjectSummary />
+         <ProjectSummary />
       </div>
     )
 }
 
-export default ProjectList
+export default ProjectList   

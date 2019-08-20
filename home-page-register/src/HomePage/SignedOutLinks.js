@@ -3,7 +3,7 @@ import { NavLink} from 'react-router-dom';
 const SignedInLinks = () => {
    return (
         <div>
-            <ul className='right'>
+            <ul className='right '>
                 <li>
                     <NavLink to='/'>Register</NavLink>
                 </li>

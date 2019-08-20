@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class Notification  () =>{
+const  Notification = ()=>{
   return (
       <div>
         <p>Notifications</p>
