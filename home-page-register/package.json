@@ -6,12 +6,17 @@
     "@material-ui/core": "^4.3.2",
     "@material-ui/icons": "^4.2.1",
     "@types/material-ui": "^0.21.7",
+    "firebase": "^6.4.0",
     "materialize-css": "^1.0.0-rc.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-redux": "^7.1.0",
+    "react-redux-firebase": "^2.4.0",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.1.1",
-    "reactstrap": "^8.0.1"
+    "reactstrap": "^8.0.1",
+    "redux": "^4.0.4",
+    "redux-firestore": "^0.8.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -33,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "redux-devtools": "^3.5.0"
   }
 }

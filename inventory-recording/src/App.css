@@ -7,9 +7,10 @@
 }
 body{
     /* important overides boostrap default values*/
-  font-family: 'Oswald', sans-serif !important;  
+  font-family: 'Playfair Display', serif, "Segoe UI", Roboto, sans-serif !important;  
   background: var(--mainWhite) !important;
   color: var(--mainDark)!important;  
+  background-color: rgb(183, 189, 195) !important;  
 }
 /* top of page title styling*/
 .text-title{
@@ -24,7 +25,16 @@ body{
 }
 /* basic classes end */
 
-.flex-container {
+/* .flex-container {
   display: flex;
   flex-wrap: wrap;
 }
+
+html{
+  min-height:100%;
+}
+body{
+  margin:0; padding: 0; font-family: 'Playfair Display', serif, "Segoe UI", Roboto, sans-serif;
+  background-size: 100%; background-position: bottom;
+  background-color: rgb(183, 189, 195);
+} */
