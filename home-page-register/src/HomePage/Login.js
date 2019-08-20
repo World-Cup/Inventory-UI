@@ -1,23 +1,54 @@
-import React, { useState } from 'react'
-import { Typography, Paper, Avatar, Button, FormControl, Input, InputLabel } from '@material-ui/core'
-import LockOutlinedIcon from '@material-ui/icons/LockOutlined'
-import withStyles from '@material-ui/core/styles/withStyles'
-import { Link, withRouter } from 'react-router-dom'
+import React, { useState, Component } from 'react';
+import './App.css'
 
-//https://www.youtube.com/watch?v=K_wZCW6wXIo
-
-
-function LogIn(props) {
-	const { classes } = props
-
-	const [email, setEmail] = useState('')
-	const [password, setPassword] = useState('')
-
-    return (
-        <div>
-            LogIn
-        </div>
-    )
-
+class Login extends Component {
+	state = {
+		email: '', Password:""
+	}
+	handleChange = (e) => {
+		this.setState({
+			[e.target.id]: e.target.value
+		})
+	}
+	handleSubmit = (e) =>{
+		e.preventdefault();
+		console.log(this.state)
+	}
+  render(){
+	return (
+		<div className="wrapper">
+			<div className="form-wrapper">
+				<h4> Sign In</h4>
+				<form onSubmit={this.handleSubmit} noValidate>
+					<div className="email">
+						<label htmlFor="email">Email</label>
+						<input
+						id="email" name="email" placeholder="Email"
+						autoComplete="off" 
+						//value={email} 
+						onChange= {this.handleChange}
+						//onChange ={}
+						/>
+					</div>
+					<div className="password">
+						<label htmlFor="password">Password</label> 
+						<input
+							id="Password" name="Password" placeholder="Password"
+							placeholder="Password"
+							type="password"
+							onChange={this.handleChange}
+						/>
+					</div>
+					<div className="createAccount">
+						<button type="submit">Create Account</button>
+					</div>
+					<div className="loginAccount">
+						<button type="submit">Register</button>
+					</div>
+				</form>
+			</div>
+	  	</div>
+	)
 }
-export default LogIn;
+}
+export default Login;
