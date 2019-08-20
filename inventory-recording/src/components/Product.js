@@ -5,7 +5,7 @@ import {ProductConsumer} from '../Context';
 export default class Product extends Component {
     render() {
 
-        const {id, title, img, inCart} = this.props.Product
+        const {id, title, img, inCart} = this.props.product
         return (
             <ProductWrapper className = 'col-9 mx-auto col-md-6 col-lg-3'>
                 <div className ='img-container p-5' onClick ={ () =>console.log('image container click btn')}>

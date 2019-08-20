@@ -1,16 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import {BrowserRouter as Router} from 'react-router-dom';
-import {ProductProvider} from './Context';
+import App from './HomePage/App';
+import { BrowserRouter} from 'react-router-dom'
+
+//import {ProductProvider} from './Context';
 
 
 ReactDOM.render(
-    <ProductProvider>
-         <Router>
-            <App/>
-        </Router>
-    </ProductProvider>, 
+    <BrowserRouter>
+        <App/>
+    </BrowserRouter>,
+       
  document.getElementById('root')
 );
 
@@ -18,3 +18,8 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 
+  // <ProductProvider>
+    //      <Router>
+    //         <App/>
+    //     </Router>
+    // </ProductProvider>, 
