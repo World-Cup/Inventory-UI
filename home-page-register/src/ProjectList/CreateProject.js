@@ -15,7 +15,7 @@ class CreateProject extends Component {
 	}
   render(){
 	return (
-		<div className="container">
+		<div className="container" style={{margin:"200px"}}>
             <form onSubmit = {this.handleSubmit}>
                 <h5 className ="grey-text text-darken-3">Create New Entry</h5>
                 <div className ="input-field">
