@@ -12,7 +12,7 @@ class Register extends Component {
 		})
 	}
 	handleSubmit = (e) =>{
-		e.preventdefault();
+		e.preventDefault();
 		console.log(this.state)
 	}
   render() {

@@ -11,23 +11,22 @@ class Login extends Component {
 		})
 	}
 	handleSubmit = (e) =>{
-		e.preventdefault();
+		e.preventDefault();
 		console.log(this.state)
 	}
   render(){
 	return (
 		<div className="wrapper">
 			<div className="form-wrapper">
-				<h4> Sign In</h4>
+				<h4> Sign In Account</h4>
 				<form onSubmit={this.handleSubmit} noValidate>
 					<div className="email">
 						<label htmlFor="email">Email</label>
 						<input
 						id="email" name="email" placeholder="Email"
 						autoComplete="off" 
-						//value={email} 
+						// value={email} 
 						onChange= {this.handleChange}
-						//onChange ={}
 						/>
 					</div>
 					<div className="password">
@@ -40,7 +39,7 @@ class Login extends Component {
 						/>
 					</div>
 					<div className="createAccount">
-						<button type="submit">Create Account</button>
+						<button type="submit">Sign In</button>
 					</div>
 					<div className="loginAccount">
 						<button type="submit">Register</button>

@@ -9,7 +9,7 @@ body{
     /* important overides boostrap default values*/
   font-family: 'Playfair Display', serif, "Segoe UI", Roboto, sans-serif !important;  
   background: var(--mainWhite) !important;
-  color: var(--mainDark)!important;  
+  color: var(--mainDark)!important; 
   background-color: rgb(183, 189, 195) !important;  
 }
 /* top of page title styling*/

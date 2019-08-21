@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink} from 'react-router-dom';
-const SignedInLinks = () => {
+const SignedOutLinks = () => {
    return (
         <div>
             <ul className='right '>
@@ -14,4 +14,4 @@ const SignedInLinks = () => {
         </div>
    ) 
 }
-export default SignedInLinks;
+export default SignedOutLinks;
