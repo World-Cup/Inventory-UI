@@ -22,7 +22,7 @@ function App() {
         <Route path="/details" component ={Details}/>
         <Route path ='/createproduct' component = {CreateProduct}/>
         <Route path="/cart" component ={Cart}/>
-        <Route component ={Error}/>
+        <Route exact path = '/' component ={Error}/>
       </div>     
     </React.Fragment>
   );
